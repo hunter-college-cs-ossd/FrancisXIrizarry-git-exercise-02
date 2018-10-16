@@ -4,7 +4,7 @@
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
-  Usage          : nuttyfact
+  Usage          : ./oddities
   Build with     : g++ -Wall -g -o oddities  main.cpp
   Modifications  :
   Notes:
@@ -43,7 +43,7 @@ typedef ostream& (*output_function) (const ostream & out);
                         All Function Definitions
 
 ******************************************************************************/
-
+ostream&intro_oddity ( ostream & out);
 
 
 
@@ -58,3 +58,12 @@ int main(int argc, char* argv[] )
 
     return 0;
 }
+
+ostream&intro_oddity (ostream & out)
+{
+	out<<"This is a collection of strange but true facts."<<endl;
+	
+	return out;
+} 
+
+
