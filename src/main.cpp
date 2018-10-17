@@ -53,6 +53,8 @@ ostream& anupamdas104_oddity(ostream & out){
 	return out;
 }
 
+ostream& lashana29_oddity(ostream& out);
+
 int main(int argc, char* argv[] )
 {
     // Call to introductory line
@@ -60,6 +62,7 @@ int main(int argc, char* argv[] )
     // Calls to output functions
     anupamdas104_oddity(cout);
     shadow12ac_oddity(cout);
+		lashana29_oddity(cout);
 
 
 
@@ -75,5 +78,10 @@ ostream& lineBeforeOddity(ostream &out){
 ostream& shadow12ac_oddity(ostream & out){
 	out << "If a cow laughed, would milk come out her nose?" << endl;
 	
+	return out;
+}
+
+ostream& lashana29_oddity(ostream& out) {
+	out << "If 7-11 is open 24 hours a day, 365 days a year, why are there locks on the doors?" << endl;
 	return out;
 }
