@@ -45,15 +45,16 @@ typedef ostream& (*output_function) (const ostream & out);
 ******************************************************************************/
 
 
-
-
-
+ostream& anupamdas104_oddity(ostream & out){
+	out << "Have you ever imagined a world with no hypothetical situations?\n";
+	return out;
+}
 
 int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
-
+	anupamdas104_oddity(cout);
 
 
     return 0;
