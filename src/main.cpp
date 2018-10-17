@@ -43,6 +43,9 @@ typedef ostream& (*output_function) ( ostream & out);
                         All Function Definitions
 
 ******************************************************************************/
+
+ostream& lineBeforeOddity(ostream &out);
+
 ostream& shadow12ac_oddity(ostream & out);
 
 ostream& anupamdas104_oddity(ostream & out){
@@ -52,15 +55,21 @@ ostream& anupamdas104_oddity(ostream & out){
 
 int main(int argc, char* argv[] )
 {
-
+    // Call to introductory line
+    lineBeforeOddity(cout);
     // Calls to output functions
-
-	anupamdas104_oddity(cout);
-	shadow12ac_oddity(cout);
+    anupamdas104_oddity(cout);
+    shadow12ac_oddity(cout);
 
 
 
     return 0;
+}
+
+// serves as an introductory line before the N lines of oddity
+ostream& lineBeforeOddity(ostream &out){
+    out << "This is a collection of strange but true facts:" << endl;
+    return out;
 }
 
 ostream& shadow12ac_oddity(ostream & out){
