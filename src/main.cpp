@@ -1,6 +1,6 @@
 /******************************************************************************
   Title          : main.cpp
-  Author         : 
+  Author         : Shadow12ac
   Created on     : October  7, 2018
   Description    : Displays random peculiar facts
   Purpose        : To exercise collaborative source code development
@@ -35,7 +35,7 @@ using namespace std;
 /******************************************************************************/
 
 // The syntax of the output function that must be used to print an oddity.
-typedef ostream& (*output_function) (const ostream & out);
+typedef ostream& (*output_function) ( ostream & out);
 
 
 /******************************************************************************
@@ -43,7 +43,7 @@ typedef ostream& (*output_function) (const ostream & out);
                         All Function Definitions
 
 ******************************************************************************/
-
+ostream& shadow12ac_oddity(ostream & out);
 
 ostream& anupamdas104_oddity(ostream & out){
 	out << "Have you ever imagined a world with no hypothetical situations?\n";
@@ -54,8 +54,17 @@ int main(int argc, char* argv[] )
 {
 
     // Calls to output functions
+
 	anupamdas104_oddity(cout);
+	shadow12ac_oddity(cout);
+
 
 
     return 0;
+}
+
+ostream& shadow12ac_oddity(ostream & out){
+	out << "If a cow laughed, would milk come out her nose?" << endl;
+	
+	return out;
 }
